@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/5796/J2ME/tags/1.9/jzlib-1.0.7/src/com/jcraft/jzlib
+END
+ZInputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/5796/J2ME/tags/1.9/jzlib-1.0.7/src/com/jcraft/jzlib/ZInputStream.java
+END
+InfTree.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/5796/J2ME/tags/1.9/jzlib-1.0.7/src/com/jcraft/jzlib/InfTree.java
+END
+Tree.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/5796/J2ME/tags/1.9/jzlib-1.0.7/src/com/jcraft/jzlib/Tree.java
+END
+StaticTree.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/5796/J2ME/tags/1.9/jzlib-1.0.7/src/com/jcraft/jzlib/StaticTree.java
+END
+Deflate.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/5796/J2ME/tags/1.9/jzlib-1.0.7/src/com/jcraft/jzlib/Deflate.java
+END
+ZOutputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/5796/J2ME/tags/1.9/jzlib-1.0.7/src/com/jcraft/jzlib/ZOutputStream.java
+END
+ZStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/5796/J2ME/tags/1.9/jzlib-1.0.7/src/com/jcraft/jzlib/ZStream.java
+END
+Inflate.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/5796/J2ME/tags/1.9/jzlib-1.0.7/src/com/jcraft/jzlib/Inflate.java
+END
+InfBlocks.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/5796/J2ME/tags/1.9/jzlib-1.0.7/src/com/jcraft/jzlib/InfBlocks.java
+END
+ZStreamException.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/5796/J2ME/tags/1.9/jzlib-1.0.7/src/com/jcraft/jzlib/ZStreamException.java
+END
+InfCodes.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/5796/J2ME/tags/1.9/jzlib-1.0.7/src/com/jcraft/jzlib/InfCodes.java
+END
+JZlib.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/5796/J2ME/tags/1.9/jzlib-1.0.7/src/com/jcraft/jzlib/JZlib.java
+END
+Adler32.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/5796/J2ME/tags/1.9/jzlib-1.0.7/src/com/jcraft/jzlib/Adler32.java
+END
+FilterInputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/5796/J2ME/tags/1.9/jzlib-1.0.7/src/com/jcraft/jzlib/FilterInputStream.java
+END

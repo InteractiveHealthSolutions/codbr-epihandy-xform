@@ -1,0 +1,7 @@
+MIDlet-Version: 1.0.0
+MIDlet-Vendor: Interactive Health Solutions Pakistan
+MIDlet-Jar-URL: codbr.jar
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.1
+MIDlet-1: COD-BR,,org.ihs.codbr.MainMidlet
+MIDlet-Name: CODBR

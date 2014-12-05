@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="**/.svn/|**/CVS/" kind="src" path="src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/dbutils"/>
+	<classpathentry kind="con" path="J2MELIB"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/midp-dbutils"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

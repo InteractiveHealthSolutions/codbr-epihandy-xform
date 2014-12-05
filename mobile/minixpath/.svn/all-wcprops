@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/!svn/ver/3403/J2ME/trunk/minixpath
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/3123/J2ME/trunk/minixpath/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/3123/J2ME/trunk/minixpath/.project
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/3123/J2ME/trunk/minixpath/build.xml
+END

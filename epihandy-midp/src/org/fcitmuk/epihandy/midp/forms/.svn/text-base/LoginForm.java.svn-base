@@ -1,0 +1,52 @@
+/**
+ * Java Epihandy - Mobile (J2ME) Data Collection tool
+ * (c) 2008- Makerere University Faculty of Computing & IT,
+ * This program is free software, distributed under the terms of the
+ * Apache License, Version 2.0.
+ * */
+
+
+package org.fcitmuk.epihandy.midp.forms;
+
+import javax.microedition.lcdui.Form;
+import javax.microedition.lcdui.TextField;
+
+import org.fcitmuk.util.MenuText;
+
+
+/**
+ * 
+ * @author Daniel
+ *
+ */
+public class LoginForm extends Form{
+	private TextField txtUserName;
+	private TextField txtPassword;
+	
+	public LoginForm(String title , String userName) {
+		super(title);
+			
+		txtUserName = new TextField(MenuText.USER_NAME(),/*"Guyzb"*/ userName,50,TextField.ANY); //Guyzb
+		txtPassword = new TextField(MenuText.PASSWORD(),/*"daniel123"*/ "",50,TextField.PASSWORD); //daniel123
+
+		this.append(txtUserName);
+		this.append(txtPassword);
+	}
+
+	public String getPassword() {
+		return this.txtPassword.getString();
+	}
+
+	public void setPassword(String password) {
+		this.txtPassword.setString(password);
+	}
+
+	public String getUserName() {
+		return this.txtUserName.getString();
+	}
+
+	public void setUserName(String userName) {
+		this.txtUserName.setString(userName);
+	}
+
+}

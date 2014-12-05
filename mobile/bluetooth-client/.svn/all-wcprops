@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/3123/J2ME/trunk/bluetooth-client
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/3123/J2ME/trunk/bluetooth-client/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/3123/J2ME/trunk/bluetooth-client/.project
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/3123/J2ME/trunk/bluetooth-client/build.xml
+END

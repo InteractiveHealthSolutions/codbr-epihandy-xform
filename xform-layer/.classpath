@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="res"/>
+	<classpathentry kind="con" path="org.elipse.mtj.JavaMEContainer/Java(TM) Platform Micro Edition SDK 3.0/DefaultCldcPhone1"/>
+	<classpathentry exported="true" kind="lib" path="lib/kxml2-2.3.0.jar"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/epihandy"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/minixpath"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/dbutils"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

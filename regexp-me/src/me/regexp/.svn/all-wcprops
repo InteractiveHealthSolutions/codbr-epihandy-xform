@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/6/trunk/regexp-me/src/me/regexp
+END
+CharacterClassMap4.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/4/trunk/regexp-me/src/me/regexp/CharacterClassMap4.java
+END
+CharacterArrayCharacterIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/4/trunk/regexp-me/src/me/regexp/CharacterArrayCharacterIterator.java
+END
+CharacterClassMap3.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/4/trunk/regexp-me/src/me/regexp/CharacterClassMap3.java
+END
+StringCharacterIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/4/trunk/regexp-me/src/me/regexp/StringCharacterIterator.java
+END
+CharacterClassMap2.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/4/trunk/regexp-me/src/me/regexp/CharacterClassMap2.java
+END
+CharacterClassMap1.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/4/trunk/regexp-me/src/me/regexp/CharacterClassMap1.java
+END
+CharacterCaseMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/4/trunk/regexp-me/src/me/regexp/CharacterCaseMap.java
+END
+REDebugCompiler.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/6/trunk/regexp-me/src/me/regexp/REDebugCompiler.java
+END
+RESyntaxException.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/4/trunk/regexp-me/src/me/regexp/RESyntaxException.java
+END
+CharacterIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/4/trunk/regexp-me/src/me/regexp/CharacterIterator.java
+END
+StreamCharacterIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/4/trunk/regexp-me/src/me/regexp/StreamCharacterIterator.java
+END
+RECharacter.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/4/trunk/regexp-me/src/me/regexp/RECharacter.java
+END
+REUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/4/trunk/regexp-me/src/me/regexp/REUtil.java
+END
+StringReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/4/trunk/regexp-me/src/me/regexp/StringReader.java
+END
+ReaderCharacterIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/4/trunk/regexp-me/src/me/regexp/ReaderCharacterIterator.java
+END
+RE.java
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/6/trunk/regexp-me/src/me/regexp/RE.java
+END
+RECompiler.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/6/trunk/regexp-me/src/me/regexp/RECompiler.java
+END
+REProgram.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/6/trunk/regexp-me/src/me/regexp/REProgram.java
+END

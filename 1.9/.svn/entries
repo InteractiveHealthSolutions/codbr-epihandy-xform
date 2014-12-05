@@ -1,0 +1,135 @@
+9
+
+dir
+7389
+https://svn.openxdata.org/J2ME/tags/1.9
+https://svn.openxdata.org
+
+
+
+2012-03-03T12:53:09.892748Z
+5796
+batkinson
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6cddc80d-1c40-44cd-927a-2be6005847d2
+
+.gitignore
+file
+
+
+
+
+2013-12-19T10:30:52.730000Z
+4404a3798e105c3b4644c98a04c82b17
+2011-03-16T12:12:07.812640Z
+4084
+brent.atkinson@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+35
+
+bluetooth-client
+dir
+
+build.xml
+file
+
+
+
+
+2013-12-19T10:31:26.690000Z
+85ddc77efe5c3d372a4ff30c830708e7
+2011-04-30T10:42:31.514784Z
+4288
+brent.atkinson@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+280
+
+dbutils
+dir
+
+epihandy
+dir
+
+epihandy-midlet
+dir
+
+epihandy-midp
+dir
+
+epihandy-xform-layer
+dir
+
+epihandy-xforms-server
+dir
+
+jzlib-1.0.7
+dir
+
+midp-dbutils
+dir
+
+midp-mvc
+dir
+
+midp-utils
+dir
+
+minixpath
+dir
+
+transport-layer
+dir
+

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/4298/J2ME/trunk/epihandy-xform-layer
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/3123/J2ME/trunk/epihandy-xform-layer/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/3123/J2ME/trunk/epihandy-xform-layer/.project
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/3123/J2ME/trunk/epihandy-xform-layer/build.xml
+END

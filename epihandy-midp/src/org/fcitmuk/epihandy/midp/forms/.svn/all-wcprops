@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms
+END
+StudyListView.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/StudyListView.java
+END
+UserSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/UserSettings.java
+END
+RptQtnsDataView.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/RptQtnsDataView.java
+END
+MultMediaSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/MultMediaSettings.java
+END
+GPSTypeEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/GPSTypeEditor.java
+END
+LanguageSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/LanguageSettings.java
+END
+EpihandyController.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/242/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/EpihandyController.java
+END
+DownloadUploadManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/DownloadUploadManager.java
+END
+FormListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/FormListener.java
+END
+FormDefListView.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/FormDefListView.java
+END
+UserManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/UserManager.java
+END
+LogonListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/LogonListener.java
+END
+FormDataListView.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/FormDataListView.java
+END
+TypeEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/TypeEditor.java
+END
+RepeatTypeEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/RepeatTypeEditor.java
+END
+MultmediaTypeEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/MultmediaTypeEditor.java
+END
+LoginForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/LoginForm.java
+END
+RptQtnsDataListView.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/RptQtnsDataListView.java
+END
+DefaultTypeEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/DefaultTypeEditor.java
+END
+GeneralSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/GeneralSettings.java
+END
+FormView.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/243/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/FormView.java
+END
+FormManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/FormManager.java
+END
+DateSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/DateSettings.java
+END
+TypeEditorListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/TypeEditorListener.java
+END

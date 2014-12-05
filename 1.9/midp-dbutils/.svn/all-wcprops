@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/5796/J2ME/tags/1.9/midp-dbutils
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/5796/J2ME/tags/1.9/midp-dbutils/build.xml
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/5796/J2ME/tags/1.9/midp-dbutils/.project
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/5796/J2ME/tags/1.9/midp-dbutils/.classpath
+END

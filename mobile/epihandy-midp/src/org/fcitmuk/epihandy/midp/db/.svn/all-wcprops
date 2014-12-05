@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/4126/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/db
+END
+EpihandyDataStorage.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/3402/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/db/EpihandyDataStorage.java
+END
+MalformedStreamException.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/3123/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/db/MalformedStreamException.java
+END
+StoredFormDef.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/3123/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/db/StoredFormDef.java
+END
+StudyStoreException.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/3123/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/db/StudyStoreException.java
+END
+StudyStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/4107/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/db/StudyStore.java
+END
+SelectionPersister.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/3123/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/db/SelectionPersister.java
+END
+StoredStudyDef.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/3123/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/db/StoredStudyDef.java
+END
+FormDataStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/4126/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/db/FormDataStore.java
+END

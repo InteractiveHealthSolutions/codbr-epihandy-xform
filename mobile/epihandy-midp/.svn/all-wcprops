@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/4296/J2ME/trunk/epihandy-midp
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/3123/J2ME/trunk/epihandy-midp/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/3123/J2ME/trunk/epihandy-midp/.project
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/3123/J2ME/trunk/epihandy-midp/build.xml
+END

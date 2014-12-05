@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/dbutils/src/org/fcitmuk/db/util
+END
+Persistent.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/dbutils/src/org/fcitmuk/db/util/Persistent.java
+END
+PersistentHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/dbutils/src/org/fcitmuk/db/util/PersistentHelper.java
+END
+AbstractRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/dbutils/src/org/fcitmuk/db/util/AbstractRecord.java
+END
+Serializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/dbutils/src/org/fcitmuk/db/util/Serializer.java
+END
+PersistentInt.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/dbutils/src/org/fcitmuk/db/util/PersistentInt.java
+END
+Record.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/dbutils/src/org/fcitmuk/db/util/Record.java
+END

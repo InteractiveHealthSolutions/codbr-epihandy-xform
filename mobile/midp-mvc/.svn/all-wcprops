@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/!svn/ver/3123/J2ME/trunk/midp-mvc
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/3123/J2ME/trunk/midp-mvc/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/3123/J2ME/trunk/midp-mvc/.project
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/3123/J2ME/trunk/midp-mvc/build.xml
+END

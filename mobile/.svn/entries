@@ -1,0 +1,135 @@
+10
+
+dir
+4691
+https://svn.openxdata.org/J2ME/trunk
+https://svn.openxdata.org
+
+
+
+2011-06-16T11:15:10.829664Z
+4685
+brent.atkinson@gmail.com
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+6cddc80d-1c40-44cd-927a-2be6005847d2
+
+epihandy-xforms-server
+dir
+
+bluetooth-client
+dir
+
+midp-utils
+dir
+
+epihandy-midp
+dir
+
+midp-dbutils
+dir
+
+build.xml
+file
+
+
+
+
+2011-06-21T07:34:23.515625Z
+85ddc77efe5c3d372a4ff30c830708e7
+2011-04-30T10:42:31.514784Z
+4288
+brent.atkinson@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+280
+
+minixpath
+dir
+
+epihandy
+dir
+
+epihandy-xform-layer
+dir
+
+.gitignore
+file
+
+
+
+
+2011-06-21T07:34:23.515625Z
+4404a3798e105c3b4644c98a04c82b17
+2011-03-16T12:12:07.812640Z
+4084
+brent.atkinson@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+35
+
+transport-layer
+dir
+
+dbutils
+dir
+
+jzlib-1.0.7
+dir
+
+midp-mvc
+dir
+
+epihandy-midlet
+dir
+

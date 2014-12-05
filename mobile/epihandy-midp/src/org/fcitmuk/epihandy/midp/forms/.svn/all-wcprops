@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/4296/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms
+END
+StudyListView.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/3123/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/StudyListView.java
+END
+UserSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/3123/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/UserSettings.java
+END
+RptQtnsDataView.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/4295/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/RptQtnsDataView.java
+END
+GPSTypeEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/3123/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/GPSTypeEditor.java
+END
+MultMediaSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/3123/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/MultMediaSettings.java
+END
+LanguageSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/3123/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/LanguageSettings.java
+END
+Images.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/4166/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/Images.java
+END
+EpihandyController.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/4281/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/EpihandyController.java
+END
+DownloadUploadManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/4098/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/DownloadUploadManager.java
+END
+FormListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/3123/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/FormListener.java
+END
+FormDefListView.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/3123/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/FormDefListView.java
+END
+UserManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/3402/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/UserManager.java
+END
+LogoutListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/3123/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/LogoutListener.java
+END
+LogonListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/3123/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/LogonListener.java
+END
+FormDataListView.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/3123/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/FormDataListView.java
+END
+TypeEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/3123/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/TypeEditor.java
+END
+RepeatTypeEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/4281/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/RepeatTypeEditor.java
+END
+MultmediaTypeEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/4204/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/MultmediaTypeEditor.java
+END
+LoginForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/3123/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/LoginForm.java
+END
+RptQtnsDataListView.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/3123/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/RptQtnsDataListView.java
+END
+DefaultTypeEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/4165/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/DefaultTypeEditor.java
+END
+GeneralSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/4296/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/GeneralSettings.java
+END
+FormView.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/4281/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/FormView.java
+END
+FormManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/3402/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/FormManager.java
+END
+DateSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/3123/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/DateSettings.java
+END
+TypeEditorListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/3123/J2ME/trunk/epihandy-midp/src/org/fcitmuk/epihandy/midp/forms/TypeEditorListener.java
+END

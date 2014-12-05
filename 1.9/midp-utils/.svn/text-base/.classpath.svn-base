@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="**/.svn/|**/CVS/" kind="src" path="src"/>
+	<classpathentry kind="src" path="i18n"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/dbutils"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/epihandy"/>
+	<classpathentry kind="var" path="WTK/lib/cldcapi11.jar"/>
+	<classpathentry kind="var" path="WTK/lib/midpapi20.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

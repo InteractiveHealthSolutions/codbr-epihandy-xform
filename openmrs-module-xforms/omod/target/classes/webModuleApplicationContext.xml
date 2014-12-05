@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<!-- Beans to add to the current Application context definition -->
+  
+<beans>
+	
+    <bean id="xformsUrlMapping" class="org.openmrs.module.xforms.web.controller.XformsUrlHandlerMapping">
+    	<property name="order"><value>1</value></property>
+    	<property name="mappings">
+            <props>
+	           <prop key="module/xforms/xformDesigner.form">xformDesigner</prop>
+	           <prop key="module/xforms/xformDataUpload.form">xformDataUpload</prop>
+	           <prop key="module/xforms/xformUpload.form">xformUpload</prop>
+	           <prop key="module/xforms/xsltUpload.form">xsltUpload</prop>
+	           <prop key="module/xforms/xformDelete.form">xformDelete</prop>
+	           <prop key="module/xforms/formEntry.form">formEntry</prop>
+	           <prop key="module/xforms/patientDownload.form">patientDownload</prop>
+	           <!-- <prop key="module/xforms/xformProperties.form">xformProperties</prop> -->
+	           <prop key="module/xforms/xformDesigner.form">xformDesigner</prop>
+	           <prop key="module/xforms/medicalHistoryFields.form">medicalHistoryFields</prop>
+	           <!-- <prop key="admin/patients/newPatient.form">xformDesigner</prop> -->
+	           <!-- <prop key="admin/encounters/encounter.form">formEntry</prop> -->
+	    </props>
+	</property>
+    </bean>
+	
+    <!-- Controllers -->
+    
+    <bean id="personFormEntryPortlet" class="org.openmrs.module.xforms.web.controller.XformsPersonFormEntryPortletController"/>
+	
+    <bean id="xformDesigner" class="org.openmrs.module.xforms.web.controller.XformDesignerController">
+	<property name="commandName"><value>xformDesigner</value></property>
+	<property name="formView"><value>/module/xforms/xformDesigner</value></property>
+	<property name="successView"><value>xformDesigner.form</value></property>
+    </bean>
+    
+    
+    <bean id="xformDataUpload" class="org.openmrs.module.xforms.web.controller.XformDataUploadController">
+	<property name="commandName"><value>xformDataUpload</value></property>
+	<property name="formView"><value>/module/xforms/xformDataUpload</value></property>
+	<property name="successView"><value>xformDataUpload.form</value></property>
+    </bean>
+    
+    
+    <bean id="xformUpload" class="org.openmrs.module.xforms.web.controller.XformUploadController">
+	<property name="commandName"><value>xformUpload</value></property>
+	<property name="formView"><value>/module/xforms/xformUpload</value></property>
+	<property name="successView"><value>xformUpload.form</value></property>
+    </bean>
+    
+    <bean id="xsltUpload" class="org.openmrs.module.xforms.web.controller.XformUploadController">
+	<property name="commandName"><value>xsltUpload</value></property>
+	<property name="formView"><value>/module/xforms/xsltUpload</value></property>
+	<property name="successView"><value>xsltUpload.form</value></property>
+    </bean>
+    
+    <bean id="xformDelete" class="org.openmrs.module.xforms.web.controller.XformDeleteController">
+	<property name="commandName"><value>xformDelete</value></property>
+	<property name="formView"><value>/module/xforms/xformDelete</value></property>
+	<property name="successView"><value>xformDelete.form</value></property>
+    </bean>
+    
+    <bean id="formEntry" class="org.openmrs.module.xforms.web.controller.XformEntryController">
+	<property name="commandName"><value>formEntry</value></property>
+	<property name="formView"><value>/module/xforms/formEntry</value></property>
+	<property name="successView"><value>formEntry.form</value></property>
+    </bean>
+    
+    <bean id="patientDownload" class="org.openmrs.module.xforms.web.controller.PatientDownloadController">
+	<property name="commandName"><value>patientDownload</value></property>
+	<property name="formView"><value>/module/xforms/patientDownload</value></property>
+	<property name="successView"><value>patientDownload.form</value></property>
+    </bean>
+    
+    <!-- 
+    <bean id="xformProperties" class="org.openmrs.module.xforms.web.controller.XformPropertiesController">
+	<property name="commandName"><value>xformProperties</value></property>
+	<property name="formView"><value>/module/xforms/xformProperties</value></property>
+	<property name="successView"><value>xformProperties.form</value></property>
+    </bean>  -->
+    
+    <bean id="medicalHistoryFields" class="org.openmrs.module.xforms.web.controller.MedicalHistoryFieldsController">
+		<property name="commandName"><value>form</value></property>
+		<property name="formView"><value>/module/xforms/medicalHistoryFields</value></property>
+		<property name="successView"><value>medicalHistoryFields.form</value></property>
+	</bean>
+	
+	<bean id="patientReg" class="org.openmrs.module.xforms.web.controller.PatientRegController">
+		<property name="commandName"><value>patientReg</value></property>
+		<property name="formView"><value>/module/xforms/patientReg</value></property>
+		<property name="successView"><value>patientReg.form</value></property>
+    </bean>
+    
+</beans>

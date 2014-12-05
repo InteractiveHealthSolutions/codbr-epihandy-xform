@@ -1,0 +1,321 @@
+/**
+ * Java Epihandy - Mobile (J2ME) Data Collection tool
+ * (c) 2008- Makerere University Faculty of Computing & IT,
+ * This program is free software, distributed under the terms of the
+ * Apache License, Version 2.0.
+ * */
+
+package org.fcitmuk.communication;
+
+import java.util.Enumeration;
+import java.util.Hashtable;
+import java.util.Vector;
+
+import javax.microedition.lcdui.Choice;
+import javax.microedition.lcdui.Command;
+import javax.microedition.lcdui.Display;
+import javax.microedition.lcdui.Displayable;
+import javax.microedition.lcdui.Form;
+import javax.microedition.lcdui.List;
+import javax.microedition.lcdui.StringItem;
+import javax.microedition.lcdui.TextField;
+
+import org.fcitmuk.midp.mvc.AbstractView;
+import org.fcitmuk.util.DefaultCommands;
+import org.fcitmuk.util.MenuText;
+import org.fcitmuk.util.SimpleOrderedHashtable;
+
+/**
+ * This class shows existing connection parameters and lets the user modify
+ * them, before passing them over.
+ * 
+ * @author Daniel, Omar
+ * 
+ */
+public class ConnectionSettings extends AbstractView {
+
+	private static final int CA_NONE = 0;
+	private static final int CA_CON_TYPES = 1;
+	private static final int CA_CON_PARAMS = 2;
+
+	String userName = "";
+	String password = "";
+
+	/** The connection type to use. */
+	private byte conType = TransportLayer.CON_TYPE_NULL;
+
+	/** The connection parameters. */
+	protected Hashtable conParams = new Hashtable();
+
+	/** The connection parameters. */
+	protected Vector connectionParameters = new Vector();
+
+	private SimpleOrderedHashtable conTypes;
+
+	/** Reference to the parent. */
+	TransportLayer defTransLayer;
+
+	private int currentAction = CA_NONE;
+
+	/** the URL used for connecting to the server **/
+	private String serverURL = "";
+	
+
+	public ConnectionSettings() {
+
+	}
+
+	/**
+	 * Displays a screen for the user to select a connection type.
+	 * 
+	 * @param display
+	 *            - reference to the current display.
+	 * @param prevScreen
+	 *            - the screen to display after dismissing our screens.
+	 */
+	//TODO: change here for making HTTP only connection
+	public void getUserSettings(Display display, Displayable prevScreen,
+			byte conType, SimpleOrderedHashtable conTypes, Hashtable conParams,
+			TransportLayer defTransLayer, String name, String password,
+			Vector connectionParameters) {
+		
+		
+		AbstractView.display = display;
+		this.prevScreen = prevScreen;
+		this.conTypes = conTypes;
+		this.conParams = conParams;
+		this.connectionParameters = connectionParameters;
+		this.defTransLayer = defTransLayer;
+//
+		//currentAction = CA_CON_TYPES;
+		currentAction  = CA_CON_PARAMS;
+		//OMAR CODE TO SHOW HTTP CONNECTION PARAMETERS DIRECTLY
+		this.conType = TransportLayer.CON_TYPE_HTTP;		
+		Form frm = new Form(this.title);		
+		showHttpConParams(frm);		
+		//OMAR CODE ENDS HERE
+		
+		//The code below is commented by Omar on 9th June 2011
+//
+//		screen = new List(MenuText.CONNECTION_TYPE(), Choice.IMPLICIT);
+//
+//		// TODO This hashtable does not maintain the order on devices like sony
+//		// erickson.
+//		Enumeration keys = conTypes.keys();
+//		Object key;
+//		while (keys.hasMoreElements()) {
+//			key = keys.nextElement();
+//			((List) screen).append(conTypes.get(key).toString(), null);
+//		}
+//
+//		screen.addCommand(DefaultCommands.cmdOk);
+//		screen.addCommand(DefaultCommands.cmdCancel);
+//		byte index = fromConTypeToIndex(conType);
+//		if (index >= 0 && index < ((List) screen).size())
+//			((List) screen).setSelectedIndex(index, true);
+//		screen.setCommandListener(this);
+//
+		AbstractView.display.setCurrent(frm);
+	}
+
+	private byte fromConTypeToIndex(byte conType) {
+		return (byte) conTypes.getIndex(new Byte(conType));
+	}
+
+	private byte fromIndexToConType(int index) {
+		return ((Byte) conTypes.keyAt(index)).byteValue();
+	}
+
+	/**
+	 * Processes the command events.
+	 * 
+	 * @param c
+	 *            - the issued command.
+	 * @param d
+	 *            - the screen object the command was issued for.
+	 */
+	public void commandAction(Command c, Displayable d) {
+		try {
+			if (c == DefaultCommands.cmdOk || c == List.SELECT_COMMAND)
+				handleOkCommand(d);
+			else if (c == DefaultCommands.cmdCancel)
+				handleCancelCommand(d);
+		} catch (Exception e) {
+		
+			// alertMsg.showError(e.getMessage());
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * Processes the cancel command event.
+	 * 
+	 * @param d
+	 *            - the screen object the command was issued for.
+	 */
+	private void handleCancelCommand(Displayable d) {
+		if (currentAction == CA_CON_PARAMS) {
+			currentAction = CA_CON_TYPES;
+			display.setCurrent(screen);
+		} else
+			defTransLayer.onConnectionSettingsClosed(false);
+	}
+	
+	/**
+	 * @author Omar
+	 * Date: 21-12-2010
+	 * Appends server's URL with connection paramenters for Cohort, Forms, etc and saves them in Hashtable 
+	 * @return Boolean value to indicate success of the
+	 */
+	private boolean compileHTTPConnectionParameters()
+	{
+		conParams.put(TransportLayer.KEY_USER_DOWNLOAD_HTTP_URL,serverURL + 
+				"/moduleServlet/xforms/userDownload");
+		conParams.put(TransportLayer.KEY_FORM_DOWNLOAD_HTTP_URL, serverURL + 
+				"/moduleServlet/xforms/xformDownload?target=xforms&uname=" + userName + "&pw=" + password);
+		
+		conParams.put(TransportLayer.KEY_DATA_UPLOAD_HTTP_URL,serverURL + 
+				"/moduleServlet/xforms/xformDataUpload?batchEntry=true&uname=" + userName + "&pw=" + password);
+		
+		conParams.put(TransportLayer.NAME_COHORT_DOWNLOAD_URL,serverURL + 
+				"/module/xforms/patientDownload.form?downloadCohorts=true"+ userName + "&pw=" + password);
+		
+		conParams.put(TransportLayer.NAME_PATIENT_DOWNLOAD_URL,serverURL + 
+				"/module/xforms/patientDownload.form?downloadPatients=true"+ userName + "&pw=" + password);	
+		return true;
+	}
+	
+	public String getServerURL()
+	{
+		return serverURL;
+	}
+	
+	/**
+	 * @author Omar 
+	 * Method to obtain the user entered URL for the Server
+	 * @param d displayable object reperesenting the Connections Form
+	 * @return Boolean variable indicating the outcome of the operation 
+	 */
+	private boolean setURL(Displayable d)
+	{
+		Form frm = (Form)d;
+		try {
+			serverURL = ((TextField)(frm.get(0))).getString();
+			if(serverURL=="") return false;
+			return true;
+		} catch (Exception e) {
+			return false;		
+		}		
+	}
+
+	/**
+	 * Processes the OK command event.
+	 * 
+	 * @param d
+	 *            - the screen object the command was issued for.
+	 */
+	private void handleOkCommand(Displayable d) {
+		if (currentAction == CA_CON_PARAMS) {
+			if (d != null) {
+				if (conType == TransportLayer.CON_TYPE_HTTP) {
+					if(setURL(d)) //if URL bits are taken correctly
+					{
+						//save the connection parameters after adding the URL bits
+						compileHTTPConnectionParameters();
+					}
+				
+				} else if (conType == TransportLayer.CON_TYPE_BLUETOOTH) {
+					conParams.put(TransportLayer.KEY_BLUETOOTH_SERVER_ID,
+							((TextField) ((Form) d).get(0)).getString());
+					conParams.put(TransportLayer.KEY_BLUETOOTH_DEVICE_NAME,
+							((TextField) ((Form) d).get(1)).getString());
+				} else if (conType == TransportLayer.CON_TYPE_SMS) {
+					conParams.put(TransportLayer.KEY_SMS_DESTINATION_ADDRESS,
+							((TextField) ((Form) d).get(0)).getString());
+					conParams.put(TransportLayer.KEY_SMS_SOURCE_ADDRESS,
+							((TextField) ((Form) d).get(1)).getString());
+				}
+			}
+			defTransLayer.onConnectionSettingsClosed(true);
+		} else {
+			conType = fromIndexToConType(((List) d).getSelectedIndex());
+			showConParams();
+		}
+	}
+
+	private void showConParams() {
+		currentAction = CA_CON_PARAMS;
+
+		if (conType == TransportLayer.CON_TYPE_HTTP)
+			showHttpConParams(new Form(new ConnectionSettings().getTitle()));
+		else if (conType == TransportLayer.CON_TYPE_BLUETOOTH)
+			showBluetoothConParams();
+		else
+			handleOkCommand(null);
+	}
+
+	public void showHttpConParams(Form frm) {
+		TextField txtField =new TextField("Server Address", "http://125.209.94.150:8080/openmrs", 80, TextField.ANY);
+		
+		frm.append(txtField);
+		StringItem notification = new StringItem("Note", "Please enter complete web address of the server which points to the login page.");
+		
+		frm.append(notification);
+		frm.addCommand(DefaultCommands.cmdCancel);
+		frm.addCommand(DefaultCommands.cmdOk);
+		frm.setCommandListener(this);
+
+		display.setCurrent(frm);
+	}
+
+	private void showBluetoothConParams() {
+		Form frm = new Form(this.title);
+
+		TextField txtField = new TextField(MenuText.BLUETOOTH_SERVICE_ID(),
+				(String) conParams.get(TransportLayer.KEY_BLUETOOTH_SERVER_ID),
+				100, TextField.ANY);
+		frm.append(txtField);
+
+		txtField = new TextField(MenuText.BLUETOOTH_DEVICE_NAME(),
+				(String) conParams
+						.get(TransportLayer.KEY_BLUETOOTH_DEVICE_NAME), 100,
+				TextField.ANY);
+		frm.append(txtField);
+
+		frm.addCommand(DefaultCommands.cmdCancel);
+		frm.addCommand(DefaultCommands.cmdOk);
+		frm.setCommandListener(this);
+
+		display.setCurrent(frm);
+	}
+
+	/*
+	 * private void showSMSConParams(){ Form frm = new Form(this.title);
+	 * 
+	 * TextField txtField = new
+	 * TextField("Server Address:",(String)conParams.get
+	 * (TransportLayer.KEY_SMS_DESTINATION_ADDRESS),100,TextField.ANY);
+	 * frm.append(txtField);
+	 * 
+	 * txtField = new
+	 * TextField("Source Address:",(String)conParams.get(TransportLayer
+	 * .KEY_SMS_SOURCE_ADDRESS),100,TextField.ANY); frm.append(txtField);
+	 * 
+	 * frm.addCommand(DefaultCommands.cmdCancel);
+	 * frm.addCommand(DefaultCommands.cmdOk); frm.setCommandListener(this);
+	 * 
+	 * display.setCurrent(frm); }
+	 */
+
+	public byte getConType() {
+		return conType;
+	}
+
+	public Hashtable getConParams() {
+		return conParams;
+	}
+
+	public Vector getConnectionParameters() {
+		return connectionParameters;
+	}
+}

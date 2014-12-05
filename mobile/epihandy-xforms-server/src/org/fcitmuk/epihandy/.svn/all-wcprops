@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/4107/J2ME/trunk/epihandy-xforms-server/src/org/fcitmuk/epihandy
+END
+FormNotFoundException.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/3123/J2ME/trunk/epihandy-xforms-server/src/org/fcitmuk/epihandy/FormNotFoundException.java
+END
+EpihandyXformSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/4107/J2ME/trunk/epihandy-xforms-server/src/org/fcitmuk/epihandy/EpihandyXformSerializer.java
+END
+DeserializationListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/3123/J2ME/trunk/epihandy-xforms-server/src/org/fcitmuk/epihandy/DeserializationListener.java
+END
+DeserializationListenerAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/3123/J2ME/trunk/epihandy-xforms-server/src/org/fcitmuk/epihandy/DeserializationListenerAdapter.java
+END

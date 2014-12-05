@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/!svn/ver/3123/J2ME/trunk/jzlib-1.0.7
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/3123/J2ME/trunk/jzlib-1.0.7/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/3123/J2ME/trunk/jzlib-1.0.7/.project
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/3123/J2ME/trunk/jzlib-1.0.7/build.xml
+END

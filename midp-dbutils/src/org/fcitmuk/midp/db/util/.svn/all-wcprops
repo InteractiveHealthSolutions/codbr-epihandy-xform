@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/midp-dbutils/src/org/fcitmuk/midp/db/util
+END
+Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/midp-dbutils/src/org/fcitmuk/midp/db/util/Settings.java
+END
+Storage.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/midp-dbutils/src/org/fcitmuk/midp/db/util/Storage.java
+END
+RMSStorage.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/midp-dbutils/src/org/fcitmuk/midp/db/util/RMSStorage.java
+END
+StorageListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/midp-dbutils/src/org/fcitmuk/midp/db/util/StorageListener.java
+END
+StorageFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/midp-dbutils/src/org/fcitmuk/midp/db/util/StorageFactory.java
+END

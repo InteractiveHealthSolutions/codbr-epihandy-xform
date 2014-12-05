@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/3222/J2ME/trunk/midp-dbutils/src/org/fcitmuk/midp/db/util
+END
+Settings.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/3123/J2ME/trunk/midp-dbutils/src/org/fcitmuk/midp/db/util/Settings.java
+END
+Storage.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/3123/J2ME/trunk/midp-dbutils/src/org/fcitmuk/midp/db/util/Storage.java
+END
+RMSStorage.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/3222/J2ME/trunk/midp-dbutils/src/org/fcitmuk/midp/db/util/RMSStorage.java
+END
+StorageListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/3123/J2ME/trunk/midp-dbutils/src/org/fcitmuk/midp/db/util/StorageListener.java
+END
+StorageFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/3123/J2ME/trunk/midp-dbutils/src/org/fcitmuk/midp/db/util/StorageFactory.java
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 25
+/!svn/ver/4685/J2ME/trunk
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/!svn/ver/4084/J2ME/trunk/.gitignore
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/!svn/ver/4288/J2ME/trunk/build.xml
+END

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="**/.svn/|**/CVS/" kind="src" path="src"/>
+	<classpathentry kind="src" path="res"/>
+	<classpathentry kind="con" path="org.elipse.mtj.JavaMEContainer/Java(TM) Platform Micro Edition SDK 3.0/DefaultCldcPhone1"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/bluetooth-client"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/dbutils"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/midp-dbutils"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/midp-mvc"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/midp-utils"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/openmrs"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/transport-layer"/>
+	<classpathentry exported="true" kind="lib" path="lib/jazzlib-j2me-0.0.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/microlog-logger-core-2.3.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/microlog-logger-midp-2.3.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/cldc_classes.jar"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/xform-layer"/>
+	<classpathentry exported="true" kind="lib" path="lib/kxml2-2.3.0.jar"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/epihandy"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/epihandy-midp"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/logger"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

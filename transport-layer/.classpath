@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="**/.svn/|**/CVS/" kind="src" path="src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/dbutils"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/bluetooth-client"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/midp-utils"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/midp-dbutils"/>
+	<classpathentry kind="con" path="J2MELIB"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/midp-mvc"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/logger"/>
+	<classpathentry kind="lib" path="lib/microlog-logger-core-2.3.5.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

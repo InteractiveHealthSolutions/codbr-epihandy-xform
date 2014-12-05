@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/225/omrs%20mobile/1.6/GPS/openmrs-midlet
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/238/omrs%20mobile/1.6/GPS/openmrs-midlet/.classpath
+END
+.eclipseme
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/238/omrs%20mobile/1.6/GPS/openmrs-midlet/.eclipseme
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/238/omrs%20mobile/1.6/GPS/openmrs-midlet/.project
+END
+openmrs-midlet.jad
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/238/omrs%20mobile/1.6/GPS/openmrs-midlet/openmrs-midlet.jad
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/238/omrs%20mobile/1.6/GPS/openmrs-midlet/build.xml
+END

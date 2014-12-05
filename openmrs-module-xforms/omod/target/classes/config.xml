@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DOCTYPE module PUBLIC "-//OpenMRS//DTD OpenMRS Config 1.0//EN" "http://resources.openmrs.org/doctype/config-1.0.dtd"> -->
+
+<module configVersion="1.0">
+	
+	<!-- Base Module Properties -->
+	<id>xforms</id>
+	<name>XForms</name>
+	<version>4.2.4</version>
+	<package>org.openmrs.module.xforms</package>
+	<author>Daniel Kayiwa</author>
+	<description>
+			A browser based forms module which adds XForms support and related services to XForms clients, like user and patient download.
+	</description>
+
+	<activator>org.openmrs.module.xforms.XformsActivator</activator>
+	
+	<updateURL>https://modules.openmrs.org/modules/download/xforms/update.rdf</updateURL>
+	
+	<require_version>1.5.0</require_version>
+	<require_database_version>1.5.0</require_database_version>
+	
+	<advice>
+		<point>org.openmrs.api.FormService</point>
+		<class>org.openmrs.module.xforms.aop.FormDeleteAfterAdvice</class>
+	</advice>
+	
+	<advice>
+		<point>org.openmrs.api.LocationService</point>
+		<class>org.openmrs.module.xforms.aop.XformsLocationAdvisor</class>
+	</advice>
+	
+	<advice>
+		<point>org.openmrs.api.UserService</point>
+		<class>org.openmrs.module.xforms.aop.XformsProviderAdvisor</class>
+	</advice>
+	
+	<advice>
+		<point>org.openmrs.api.ConceptService</point>
+		<class>org.openmrs.module.xforms.aop.XformsConceptAdvisor</class>
+	</advice>
+
+	<!-- Required Global Properties -->
+	<globalProperty>
+		<property>xforms.xformSerializer</property>
+		<defaultValue>org.fcitmuk.epihandy.EpihandyXformSerializer</defaultValue>
+		<description>The XForms serializer</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.patientSerializer</property>
+		<defaultValue>org.openmrs.module.xforms.serialization.DefaultPatientSerializer</defaultValue>
+		<description>The patient set serializer</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.cohortSerializer</property>
+		<defaultValue>org.openmrs.module.xforms.serialization.DefaultCohortSerializer</defaultValue>
+		<description>The patient cohort (cohort_id and name) serializer</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.savedSearchSerializer</property>
+		<defaultValue>org.openmrs.module.xforms.serialization.DefaultSavedSearchSerializer</defaultValue>
+		<description>The patient saved search serializer</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.userSerializer</property>
+		<defaultValue>org.openmrs.module.xforms.serialization.DefaultUserSerializer</defaultValue>
+		<description>The user set serializer</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.xformUploadFolder</property>
+		<defaultValue></defaultValue>
+		<description>Folder from which XForms data is uploaded</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.xformDownloadFolder</property>
+		<defaultValue></defaultValue>
+		<description>Folder to which XForms are download</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.patientDownloadCohort</property>
+		<defaultValue></defaultValue>
+		<description>The cohort for patients to download</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.newPatientFormId</property>
+		<defaultValue></defaultValue>
+		<description>The id of the form for creating new patients</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.useStoredXform</property>
+		<defaultValue>true</defaultValue>
+		<description>Set to true if you want to use XForms uploaded into the database, else set to false if you want to always build an XForm on the fly from the current form definition.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.searchNewPatientAfterFormSubmission</property>
+		<defaultValue>true</defaultValue>
+		<description>Set to true if you want to search for a new patient after submitting a form, else set to false if you want to go back to the same patient.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.multiSelectAppearance</property>
+		<defaultValue>full</defaultValue>
+		<description>The appearance of multi select input fields. Allowed values are: {full,minimal,compact} </description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.singleSelectAppearance</property>
+		<defaultValue>minimal</defaultValue>
+		<description>The appearance of single select input fields. Allowed values are: {full,minimal,compact} </description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.queue_dir</property>
+		<defaultValue>xforms/queue</defaultValue>
+		<description>Directory containing the xforms queue items. This will contain xforms xml model files submitted and awaiting processing to be submitted into the formentry queue. </description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.error_dir</property>
+		<defaultValue>xforms/error</defaultValue>
+		<description>Directory containing the xforms error items.  This will contain xform model xml files that have not been submitted into the formentry queue because of processing errors. </description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.archive_dir</property>
+		<defaultValue>xforms/archive/%Y/%M</defaultValue>
+		<description>Directory containing the xforms archive items.  This will contain xform model xml files that have been processed and then submitted successfully into the formentry queue. </description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.includeUsersInXformsDownload</property>
+		<defaultValue>true</defaultValue>
+		<description>Set to true if you want to include users when downloading xforms, else set to false if you want to always load the users list separately.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.dateSubmitFormat</property>
+		<defaultValue>yyyy-MM-dd</defaultValue>
+		<description>The format of the dates passed in the xml of the xforms model. Please make sure this matches with the date format of your data entry applications, else you will get wrong dates on the server.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.dateTimeSubmitFormat</property>
+		<defaultValue>yyyy-MM-dd'T'HH:mm:ssZ</defaultValue>
+		<description>The format of the datetime passed in the xml of the xforms model. Please make sure this matches with the date format of your data entry applications, else you will get wrong dates on the server.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.timeSubmitFormat</property>
+		<defaultValue>HH:mm:ss</defaultValue>
+		<description>The format of the time passed in the xml of the xforms model. Please make sure this matches with the date format of your data entry applications, else you will get wrong times on the server.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.dateDisplayFormat</property>
+		<defaultValue>dd/MM/yyyy</defaultValue>
+		<description>The display format of dates used by the xforms module.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.dateTimeDisplayFormat</property>
+		<defaultValue>dd/MM/yyyy hh:mm a</defaultValue>
+		<description>The display format of datetime used by the xforms module.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.timeDisplayFormat</property>
+		<defaultValue>hh:mm a</defaultValue>
+		<description>The display format of time used by the xforms module.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.defaultFontFamily</property>
+		<defaultValue>Verdana, 'Lucida Grande', 'Trebuchet MS', Arial, Sans-Serif</defaultValue>
+		<description>The default font family used by the form designer.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.rejectExistingPatientCreation</property>
+		<defaultValue>true</defaultValue>
+		<description>Set to true to Reject forms for patients considered new when they already exist, by virture of patient identifier. Else set to false to allow them.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.usePatientXform</property>
+		<defaultValue>false</defaultValue>
+		<description>Set to true if you want to use XForms to create new patients instead of the default openmrs create patient form, else set to false.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.useEncounterXform</property>
+		<defaultValue>true</defaultValue>
+		<description>Set to true if you want to use XForms to edit encounters instead of the default openmrs edit encounter screen, else set to false.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.smsSendSuccessReports</property>
+		<defaultValue>true</defaultValue>
+		<description>Set to true if you want sms sender to get success reports, else set to false.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.smsSendFailureReports</property>
+		<defaultValue>true</defaultValue>
+		<description>Set to true if you want sms sender to get failure reports, else set to false.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.smsFieldSepChar</property>
+		<defaultValue>=</defaultValue>
+		<description>The separator between questions and answers in the sms text.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.complexobs_dir</property>
+		<defaultValue>xforms/complexobs</defaultValue>
+		<description>Directory for storing complex obs used by the xforms module.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.showSubmitSuccessMsg</property>
+		<defaultValue>false</defaultValue>
+		<description>Set to true if you want to display the form submitted successfully message every time a form is submitted successfully.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.localeList</property>
+		<defaultValue>en:English</defaultValue>
+		<description>The list of locales supported by the form designer. e.g:  en:English,fr:French,es:Spanish,it:Italian,pt:Portuguese</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.showLanguageTab</property>
+		<defaultValue>false</defaultValue>
+		<description>Set to true if you want to display the language xml tab of the form designer.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.showXformsSourceTab</property>
+		<defaultValue>false</defaultValue>
+		<description>Set to true if you want to display the xforms source tab of the form designer.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.showLayoutXmlTab</property>
+		<defaultValue>false</defaultValue>
+		<description>Set to true if you want to display the layout xml tab of the form designer.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.showModelXmlTab</property>
+		<defaultValue>false</defaultValue>
+		<description>Set to true if you want to display the model xml tab of the form designer.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.showJavaScriptTab</property>
+		<defaultValue>false</defaultValue>
+		<description>Set to true if you want to display the JavaScript tab of the form designer.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.showCSSTab</property>
+		<defaultValue>false</defaultValue>
+		<description>Set to true if you want to display the CSS tab of the form designer.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.setDefaultProvider</property>
+		<defaultValue>false</defaultValue>
+		<description>Set to true if you want to set the default provider to the logged on user, if he or she has the provider role.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.setDefaultLocation</property>
+		<defaultValue>false</defaultValue>
+		<description>Set to true if you want to set the default location to that of the logged on user.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.defaultFontSize</property>
+		<defaultValue>16</defaultValue>
+		<description>The default font size used by the form designer.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.showOfflineFormDesigner</property>
+		<defaultValue>false</defaultValue>
+		<description>Set to true if you want to show the form designer in off line mode.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.encounterDateIncludesTime</property>
+		<defaultValue>false</defaultValue>
+		<description>Set to true if the encounter date should include time.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.allowBindEdit</property>
+		<defaultValue>false</defaultValue>
+		<description>Set to true if you want to allow editing of question bindings when designing forms.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.patientRegEncounterFormId</property>
+		<defaultValue>0</defaultValue>
+		<description>The id of the encounter form which will be combined with the patient registration form.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.saveFormat</property>
+		<defaultValue>purcforms</defaultValue>
+		<description>The format in which the xforms will be saved. For now we support two formats: purcforms and javarosa</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.isRemoteFormEntry</property>
+		<defaultValue>false</defaultValue>
+		<description>Set to true if this is a remote form entry server (Not the main server).</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.decimalSeparators</property>
+		<defaultValue>en:.;fr:.;es:,;it:.;pt:.</defaultValue>
+		<description>The decimal separators for each locale. e.g:  en:.;fr:.;es:,;it:.;pt:.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.new_patient_identifier_type_id</property>
+		<defaultValue>1</defaultValue>
+		<description>The id of the patient identifier type which will be used when creating new patients from forms which do not have a patient_identifier.identifier_type_id field.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.undoRedoBufferSize</property>
+		<defaultValue>-1</defaultValue>
+		<description>Set to the maximum number of actions you can undo or redo. The bigger the size, the more memory your browser needs. Default value is 100. Set to -1 if you do not want any limit.</description>
+	</globalProperty>
+	<globalProperty>
+		<property>xforms.autoGeneratePatientIdentifier</property>
+		<defaultValue>false</defaultValue>
+		<description>Set to true if you want the idgen module to generate patient identifiers when creating new patients using the xforms module.</description>
+	</globalProperty>
+	
+	<globalProperty>
+		<property>xforms.preferredConceptSource</property>
+		<defaultValue></defaultValue>
+		<description>The name for preferred concept source to be used for forms that can be shared with other OpenMRS installations.</description>
+	</globalProperty>
+	
+	<globalProperty>
+		<property>xforms.overwriteValidationsOnRefresh</property>
+		<defaultValue>false</defaultValue>
+		<description>Set to true if, on refresh, you want custom validations to be replaced by those from the database concepts.</description>
+	</globalProperty>
+	
+	<globalProperty>
+		<property>xforms.showDesignSurfaceTab</property>
+		<defaultValue>true</defaultValue>
+		<description>Set to true if you want to display the Design Surface tab of the form designer.</description>
+	</globalProperty>
+	
+	<globalProperty>
+		<property>xforms.showPreviewTab</property>
+		<defaultValue>true</defaultValue>
+		<description>Set to true if you want to display the Preview tab of the form designer.</description>
+	</globalProperty>
+	
+	<globalProperty>
+		<property>xforms.manualWidgetLayout</property>
+		<defaultValue>false</defaultValue>
+		<description>Set to true if you want to turn off automatic widget layout on loading form for the first time, else set to false</description>
+	</globalProperty>
+	
+	<globalProperty>
+		<property>xforms.useConceptIdAsHint</property>
+		<defaultValue>false</defaultValue>
+		<description>Set to true if you want to display the concept Id as the default field description.</description>
+	</globalProperty>
+	
+	<globalProperty>
+		<property>xforms.adminEmail</property>
+		<defaultValue></defaultValue>
+		<description>An e-mail address where notifications about failed data uploads will be sent.</description>
+	</globalProperty>
+	
+	<globalProperty>
+		<property>xforms.emailServerConfig</property>
+		<defaultValue></defaultValue>
+		<description>A list of e-mail server properties in a form of 'mail.smtp.host=smtp.gmail.com;mail.smtp.port=587'. See JavaMailSender for more details.</description>
+	</globalProperty>
+	
+	<globalProperty>
+		<property>xforms.maintainOrderingOnRefresh</property>
+		<defaultValue>true</defaultValue>
+		<description>Set to true if you want to maintain the ordering of items when you refresh a form in the form designer. Else set to false.</description>
+	</globalProperty>
+	
+	<globalProperty>
+		<property>xforms.viewEncounterAsXform</property>
+		<defaultValue>false</defaultValue>
+		<description>Set to true if you want to view encounter observations in the same form which was used to submit the data. Else set to false.</description>
+	</globalProperty>
+	
+	<globalProperty>
+		<property>xforms.useAutocompleteForLocations</property>
+		<defaultValue>false</defaultValue>
+		<description>
+			Specifies that when creating a new xform the location selection element should use autocomplete,
+			Note that this only applies for OpenMRS Versions 1.8 and above
+		</description>
+	</globalProperty>
+	
+	<globalProperty>
+		<property>xforms.useAutocompleteForProviders</property>
+		<defaultValue>false</defaultValue>
+		<description>
+			Specifies that when creating a new xform the provider selection element should use autocomplete,
+			Note that this only applies for OpenMRS Versions 1.9 and above
+		</description>
+	</globalProperty>
+	
+	<!-- /Required Global Properties -->
+
+	<!-- /Xforms Module Properties -->
+	
+	<extension>
+		<point>org.openmrs.admin.list</point>
+		<class>org.openmrs.module.xforms.web.extension.html.XformsAdminExt</class>
+	</extension>
+	<extension>
+		<point>org.openmrs.admin.forms.formHeader</point>
+		<class>org.openmrs.module.xforms.web.extension.html.XformsFormHeaderExt</class>
+	</extension>
+	
+	<!--
+	<extension>
+		<point>org.openmrs.patientDashboardTab</point>
+		<class>org.openmrs.module.xforms.web.extension.html.XformsPatientDashboardTabExt</class>
+	</extension>
+	-->
+	
+	<extension>
+		<point>org.openmrs.module.web.extension.FormEntryHandler</point>
+		<class>org.openmrs.module.xforms.web.extension.html.XformsFormEntryHandler</class>
+	</extension>
+	
+	
+	<dwr>
+		<allow>
+			<create creator="new" javascript="DWRXformsService">
+				<param name="class" value="org.openmrs.module.xforms.web.DWRXformsService"/>
+			</create>
+			<convert match="org.openmrs.module.xforms.Xform" converter="bean"/>
+		</allow>
+	</dwr>
+		
+	<!-- Servlets -->
+	<!-- Accessed through the url /pageContext()/moduleServlet/<moduleId>/<servlet-name> -->
+	<servlet>
+		<servlet-name>xformDataUpload</servlet-name>
+		<servlet-class>org.openmrs.module.xforms.web.XformDataUploadServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>xformDownload</servlet-name>
+		<servlet-class>org.openmrs.module.xforms.web.XformDownloadServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>userDownload</servlet-name>
+		<servlet-class>org.openmrs.module.xforms.web.UserDownloadServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>widgetValueDownload</servlet-name>
+		<servlet-class>org.openmrs.module.xforms.web.WidgetValueServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>multimediaDownload</servlet-name>
+		<servlet-class>org.openmrs.module.xforms.web.MultimediaServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>fileOpen</servlet-name>
+		<servlet-class>org.openmrs.module.xforms.web.FileOpenServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>fileSave</servlet-name>
+		<servlet-class>org.openmrs.module.xforms.web.FileSaveServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>userValidator</servlet-name>
+		<servlet-class>org.openmrs.module.xforms.web.UserValidatorServlet</servlet-class>
+	</servlet>
+	
+	
+	<!-- Filter definitions -->
+	
+	<filter>
+		<filter-name>xformsFilter</filter-name> 
+		<filter-class>org.openmrs.module.xforms.web.XformsFilter</filter-class> 
+	</filter>
+	<filter-mapping>
+		<filter-name>xformsFilter</filter-name> 
+		<url-pattern>/*</url-pattern> 
+	</filter-mapping>
+	
+	
+	<!-- Internationalization -->
+	<!-- All message codes should start with moduleId.* -->
+	<messages>
+		<lang>en</lang>
+		<file>messages.properties</file>
+	</messages>
+	<messages>
+		<lang>fr</lang>
+		<file>messages_fr.properties</file>
+	</messages>
+	<messages>
+		<lang>es</lang>
+		<file>messages_es.properties</file>
+	</messages>
+	<!-- /Internationalization -->
+	
+	<mappingFiles>
+		Xform.hbm.xml
+		PersonRepeatAttribute.hbm.xml
+		MedicalHistoryField.hbm.xml
+		XformsFormEntryError.hbm.xml
+	</mappingFiles>
+	<privilege>
+		<name>View XForms Menu</name>
+		<description>
+			View XForms Menu in admin panel
+		</description>
+	</privilege>
+</module>

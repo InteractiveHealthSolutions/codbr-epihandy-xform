@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/!svn/ver/5796/J2ME/tags/1.9/dbutils
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/5796/J2ME/tags/1.9/dbutils/build.xml
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/5796/J2ME/tags/1.9/dbutils/.project
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/5796/J2ME/tags/1.9/dbutils/.classpath
+END

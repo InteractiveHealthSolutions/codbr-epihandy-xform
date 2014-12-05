@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/5796/J2ME/tags/1.9/midp-utils
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/5796/J2ME/tags/1.9/midp-utils/build.xml
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/5796/J2ME/tags/1.9/midp-utils/.project
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/5796/J2ME/tags/1.9/midp-utils/.classpath
+END

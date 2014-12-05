@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy
+END
+RequestHeader.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/RequestHeader.java
+END
+QuestionData.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/QuestionData.java
+END
+StudyData.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/StudyData.java
+END
+OptionData.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/OptionData.java
+END
+UserStudyDefLists.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/UserStudyDefLists.java
+END
+RepeatQtnsDef.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/RepeatQtnsDef.java
+END
+MenuTextList.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/MenuTextList.java
+END
+PageData.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/PageData.java
+END
+ResponseHeader.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/ResponseHeader.java
+END
+UserList.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/UserList.java
+END
+RepeatQtnsDataList.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/RepeatQtnsDataList.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/User.java
+END
+LanguageList.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/LanguageList.java
+END
+RepeatQtnsData.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/RepeatQtnsData.java
+END
+FormDef.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/241/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/FormDef.java
+END
+ValidationRule.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/ValidationRule.java
+END
+StudyDefList.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/StudyDefList.java
+END
+QuestionDef.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/QuestionDef.java
+END
+Condition.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/Condition.java
+END
+OptionDef.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/OptionDef.java
+END
+StudyDef.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/StudyDef.java
+END
+PageDef.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/241/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/PageDef.java
+END
+DynamicOptionDef.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/DynamicOptionDef.java
+END
+FormData.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/FormData.java
+END
+EpihandyConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/EpihandyConstants.java
+END
+SkipRule.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/SkipRule.java
+END
+StudyDataList.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/240/omrs%20mobile/1.6/GPS/epihandy/src/org/fcitmuk/epihandy/StudyDataList.java
+END

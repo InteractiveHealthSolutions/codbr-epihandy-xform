@@ -1,0 +1,12 @@
+K 10
+svn:ignore
+V 27
+build.properties
+.metadata
+
+K 13
+svn:mergeinfo
+V 51
+/J2ME/branches/1.3.X:5104
+/J2ME/branches/1.7.X:5744
+END

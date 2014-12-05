@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/5796/J2ME/tags/1.9/dbutils/src/org/fcitmuk/db/util
+END
+PersistentString.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/5796/J2ME/tags/1.9/dbutils/src/org/fcitmuk/db/util/PersistentString.java
+END
+PersistentInt.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/5796/J2ME/tags/1.9/dbutils/src/org/fcitmuk/db/util/PersistentInt.java
+END
+Persistent.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/5796/J2ME/tags/1.9/dbutils/src/org/fcitmuk/db/util/Persistent.java
+END
+PersistentHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/5796/J2ME/tags/1.9/dbutils/src/org/fcitmuk/db/util/PersistentHelper.java
+END
+AbstractRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/5796/J2ME/tags/1.9/dbutils/src/org/fcitmuk/db/util/AbstractRecord.java
+END
+PersistentArray.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/5796/J2ME/tags/1.9/dbutils/src/org/fcitmuk/db/util/PersistentArray.java
+END
+Serializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/5796/J2ME/tags/1.9/dbutils/src/org/fcitmuk/db/util/Serializer.java
+END
+Record.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/5796/J2ME/tags/1.9/dbutils/src/org/fcitmuk/db/util/Record.java
+END

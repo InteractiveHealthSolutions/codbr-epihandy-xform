@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/4111/J2ME/trunk/transport-layer/src/org/fcitmuk/communication
+END
+TransportLayerListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/3123/J2ME/trunk/transport-layer/src/org/fcitmuk/communication/TransportLayerListener.java
+END
+ConnectionParameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/3123/J2ME/trunk/transport-layer/src/org/fcitmuk/communication/ConnectionParameter.java
+END
+ConnectionSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/3123/J2ME/trunk/transport-layer/src/org/fcitmuk/communication/ConnectionSettings.java
+END
+TransportLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/4111/J2ME/trunk/transport-layer/src/org/fcitmuk/communication/TransportLayer.java
+END

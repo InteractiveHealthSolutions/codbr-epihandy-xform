@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/5796/J2ME/tags/1.9/midp-mvc/src/org/fcitmuk/midp/mvc
+END
+Controller.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/5796/J2ME/tags/1.9/midp-mvc/src/org/fcitmuk/midp/mvc/Controller.java
+END
+AbstractView.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/5796/J2ME/tags/1.9/midp-mvc/src/org/fcitmuk/midp/mvc/AbstractView.java
+END
+View.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/5796/J2ME/tags/1.9/midp-mvc/src/org/fcitmuk/midp/mvc/View.java
+END
+CommandAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/5796/J2ME/tags/1.9/midp-mvc/src/org/fcitmuk/midp/mvc/CommandAction.java
+END
